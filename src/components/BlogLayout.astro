@@ -1,0 +1,34 @@
+---
+import Layout from './Layout.astro';
+const { content } = Astro.props;
+---
+
+<style>
+    .title {
+        font-size: 3rem;
+        font-family: "Josefin Sans";
+    }
+
+    .date {
+        margin-top: 1rem;
+        color: #6a6a6a;
+        font-size: 1rem;
+        font-family: "Josefin Sans";
+    }
+
+    .text {
+        margin-top: 3rem;
+        font-size: 1.25rem;
+        font-family: "Josefin Sans";
+    }
+</style>
+
+<Layout>
+    <div class="back">
+        <div class="front fade-up" style="display: flex; flex-direction: column;">
+            <div class="title fade-down">{content.title}</div>
+            <div class="date">{content.date}</div>
+            <div class="text fade-down"> <slot /> </div>   
+        </div>
+    </div>
+</Layout>   

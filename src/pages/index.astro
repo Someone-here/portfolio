@@ -1,0 +1,21 @@
+---
+import Layout from "../components/Layout.astro";
+import About from '../components/About.astro';
+import Projects from '../components/Projects.astro';
+---
+
+<Layout>
+  <script slot="head" src="https://unpkg.com/typeit@8.0.7/dist/index.umd.js"></script>
+  <About />
+  <Projects />
+  <script>
+	document.querySelectorAll(".type").forEach((e) => {
+      new TypeIt(e, {
+        speed: 150,
+        waitUntilVisible: true,
+      }).go();
+    });
+  </script>
+</Layout>
+
+
