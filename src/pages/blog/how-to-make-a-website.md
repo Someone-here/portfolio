@@ -1,7 +1,7 @@
 ---
 layout: "../../components/BlogLayout.astro"
 title: "How to make a website!"
-date: "12th Nov, 2021"
+date: 12 Nov 2021
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod

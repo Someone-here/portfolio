@@ -1,12 +1,17 @@
 ---
 import Layout from "../../components/Layout.astro";
 import BlogCard from "../../components/BlogCard.astro";
+
+let allPosts = await Astro.fetchContent('./*.md');
+allPosts = allPosts.sort((a, b) => new Date(b.date).valueOf() - new Date(a.date).valueOf());
 ---
 
-<Layout>
+<Layout title={"Blog"}>
   <div class="back">
     <div class="front fade-up">
-        <BlogCard blog={{title: "HEEY"}} />
+        <section aria-label="Blog post list">
+          {allPosts.map(p => <BlogCard blog={p} />)}
+        </section>
     </div>
   </div>
 </Layout>

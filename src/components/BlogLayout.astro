@@ -23,7 +23,7 @@ const { content } = Astro.props;
     }
 </style>
 
-<Layout>
+<Layout title={content.title}>
     <div class="back">
         <div class="front fade-up" style="display: flex; flex-direction: column;">
             <div class="title fade-down">{content.title}</div>

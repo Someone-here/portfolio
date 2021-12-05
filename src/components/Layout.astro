@@ -1,5 +1,6 @@
 ---
 import Navbar from './Navbar.astro';
+const { title } = Astro.props;
 ---
 <html lang="en">
 <head>
@@ -7,7 +8,7 @@ import Navbar from './Navbar.astro';
 	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
 	<meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" type="text/css" href={Astro.resolve('../styles/index.css')} />
-	<title><slot name="title" /></title>
+	<title>{title}</title>
     <slot name="head" />
 </head>
 <body>
