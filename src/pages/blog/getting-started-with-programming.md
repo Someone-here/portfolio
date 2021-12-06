@@ -1,10 +1,13 @@
 ---
 layout: "../../components/BlogLayout.astro"
-title: "How to make a website!"
-name: how-to-make-a-website
-date: 12 Nov 2021
+title: How to get started with programming?!
+name: getting-started-with-programming
+date: 05 Dec 2021
 description: "
-    Here's how to make your own website!!
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod
+voluptatum ad vitae nihil dolores hic fugit eaque ipsam iusto, quae
+perspiciatis! Qui illo aliquam dolor molestias libero doloribus
+cupiditate numquam cumque quisquam veniam nisi vero sapiente voluptas
 "
 ---
 

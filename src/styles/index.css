@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 
-html::-webkit-scrollbar {
+*::-webkit-scrollbar {
   display: none;
 }
 
