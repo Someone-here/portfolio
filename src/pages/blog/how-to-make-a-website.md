@@ -3,6 +3,7 @@ layout: "../../components/BlogLayout.astro"
 title: "How to make a website!"
 name: how-to-make-a-website
 date: 12 Nov 2021
+image: https://picsum.photos/200
 description: "
     Here's how to make your own website!!
 "

@@ -3,14 +3,9 @@ layout: "../../components/BlogLayout.astro"
 title: How to get started with programming?!
 name: getting-started-with-programming
 date: 05 Dec 2021
-image: "
-    https://images.unsplash.com/photo-1589251204996-3367cc27f084?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8c3F1YXJlJTIwaW1hZ2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60
-"
+image: https://picsum.photos/200
 description: "
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod
-voluptatum ad vitae nihil dolores hic fugit eaque ipsam iusto, quae
-perspiciatis! Qui illo aliquam dolor molestias libero doloribus
-cupiditate numquam cumque quisquam veniam nisi vero sapiente voluptas
+    A complete roadmap to become a software engineer at your home, without a degree!
 "
 ---
 
