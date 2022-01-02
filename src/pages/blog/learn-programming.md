@@ -7,6 +7,7 @@ image: https://picsum.photos/200
 description: "
     Here's how to become a full fledged computer expert in coding and programming.
 "
+tags: ["computer", "programming", "tutorial"]
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod

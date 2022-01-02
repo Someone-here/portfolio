@@ -7,6 +7,7 @@ image: https://picsum.photos/200
 description: "
     A complete roadmap to become a software engineer at your home, without a degree!
 "
+tags: ["computer", "programming", "tutorial"]
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod

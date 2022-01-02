@@ -2,26 +2,97 @@
 import Layout from "../../components/Layout.astro";
 import BlogCard from "../../components/BlogCard.astro";
 
-let allPosts = await Astro.fetchContent('./*.md');
+let allPosts = Astro.fetchContent('./*.md')
 allPosts = allPosts.sort((a, b) => new Date(b.date).valueOf() - new Date(a.date).valueOf());
 ---
 
 <style>
   @media screen and (max-width: 500px) {
     .back {
-      padding: 12vh 3vw;
+      padding: 8vh 3vw;
     }
   }
 
   .back {
-    padding-bottom: 6vh;
+    padding-bottom: 2vmin;
+    flex-direction: column;
+  }
+
+  .tags {
+    display: flex;
+    justify-content: center;
+  }
+
+  .box {
+    background-color: aliceblue;
+    font-family: 'Baloo Bhaijaan 2', sans-serif;
+    font-size: max(0.8rem, 1.3vw);
+    border-radius: 8px;
+    padding: 0.3rem 0.6rem;
+    text-align: center;
+    width: 120px;
+    margin: 0rem clamp(0.5rem, 1.5vw, 1rem);
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+  }
+
+  .box:hover {
+    background-color: #d5d5d5;
+  }
+
+  .box:visited {
+    color: black;
+  }
+
+  .search {
+    text-align: center;
+    margin: clamp(0.5rem, 1.5vw, 1rem) 0rem;
+  }
+  .search input {
+    padding: 5px 10px;
+    width: clamp(250px, 80vw, 600px);
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 0px;
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+  }
+
+  .search input:focus {
+    outline: none;
   }
 </style>
 
 <Layout title={"Blog"}>
   <div class="back">
+    <div class="search fade-up">
+      <input
+        type="text"
+        placeholder="Search"
+      />
+    </div>
+    <div class="tags fade-down">
+            <a href="?tags=philosophy" class="box">Philosophy</a>
+            <a href="?tags=computer" class="box">Computer</a>
+    </div>
     <div class="front fade-up" style="overflow-y: scroll; align-items: flex-start; flex-direction: column;">
         {allPosts.map(p => <BlogCard blog={p} />)}
     </div>
   </div>
+  <script>
+  const params = new URLSearchParams(window.location.search);
+  let tags = params.get('tags')
+  tags == null ? tags = "all" : tags = tags.split(',')
+  document.querySelectorAll(".card").forEach(card => {
+    if (tags == "all") {
+      card.style.display = "flex"
+    } else {
+      if (card.dataset.tags.split(',').some(tag => tags.includes(tag))) {
+        card.style.display = "flex"
+      } else {
+        card.style.display = "none"
+      }
+    }
+  });
+  </script>
 </Layout>

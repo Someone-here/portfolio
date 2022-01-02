@@ -1,33 +1,16 @@
-<!DOCTYPE html><html lang="en"><head>
+---
+layout: "../../components/BlogLayout.astro"
+title: Does God exist?
+name: does-god-exist
+date: 01 Jan 2022
+image: https://picsum.photos/200
+description: "
+    Have you ever found questioning the existence of a supreme being? Here's an answer...
+"
+tags: ["philosophy", "God", "aethism"]
+---
 
-
-
-
-
-
-
-	<meta charset="utf-8">
-	<link rel="icon" type="image/x-icon" href="/favicon.ico">
-	<meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="../../assets/index.2249b5fd.css"><link rel="stylesheet" type="text/css" href="../../assets/getting-started-with-programming.fbc8d7d9.css">
-	<title>Get started with Programming!</title>
-    
-
-
-    
-
-</head><body><nav class="fade-down astro-JDODZG6J">
-    <ul class="astro-JDODZG6J">
-    <li class="link astro-JDODZG6J"><a href="/#about" class="astro-JDODZG6J">ABOUT</a></li>
-    <li class="link astro-JDODZG6J"><a href="/blog" class="astro-JDODZG6J">BLOG</a></li>
-    <li class="link astro-JDODZG6J"><a href="/#projects" class="astro-JDODZG6J">PROJECTS</a></li>
-    </ul>
-</nav>
-	<div class="back astro-ZBP3M35E">
-        <div class="front fade-up astro-ZBP3M35E">
-            <div class="title fade-down astro-ZBP3M35E">Get started with Programming!</div>
-            <div class="date astro-ZBP3M35E">12 Nov 2021</div>
-            <div class="text fade-down astro-ZBP3M35E"> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod
 voluptatum ad vitae nihil dolores hic fugit eaque ipsam iusto, quae
 perspiciatis! Qui illo aliquam dolor molestias libero doloribus
 cupiditate numquam cumque quisquam veniam nisi vero sapiente voluptas
@@ -60,11 +43,4 @@ distinctio eaque harum quibusdam commodi beatae sunt animi! Similique
 velit cumque blanditiis ducimus. Obcaecati, maxime. Sequi deserunt cum
 neque ad asperiores quaerat recusandae distinctio voluptas tempore!
 Unde recusandae ab architecto aspernatur! Incidunt, voluptas libero.
-Fugit, molestias quidem!</p> </div>   
-        </div>
-    </div>
-
-<script defer="">
-        document.querySelector(".back").style.height = window.innerHeight + "px";
-</script>
-   </body></html>
+Fugit, molestias quidem!
