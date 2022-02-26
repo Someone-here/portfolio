@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "asset:*": ["src/assets/*"],
+      "component:*": ["src/components/*.astro"],
+      "styles:*": ["src/styles/*"],
+    }
+  }
+}

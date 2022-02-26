@@ -2,20 +2,28 @@
 import Navbar from './Navbar.astro';
 const { title } = Astro.props;
 ---
+<style>
+	body {
+		display: flex; flex-direction: column; align-items: center;
+	}
+</style>
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
+	<link rel="stylesheet" href={Astro.resolve("../styles/tailwind.css")} />
 	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
 	<meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" type="text/css" href={Astro.resolve('../styles/index.css')} />
 	<title>{title}</title>
-    <slot name="head" />
+  <slot name="head" />
 </head>
 <body>
-    <Navbar />
+  <Navbar />
 	<slot />
 </body>
 <script defer>
-        document.querySelector(".back").style.height = window.innerHeight + "px";
+  document.querySelector(".back").style.height = window.innerHeight + "px";
+	window.addEventListener("resize", () => {
+		document.querySelector(".back").style.height = window.innerHeight + "px";
+	});
 </script>
 </html>

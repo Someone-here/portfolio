@@ -5,8 +5,8 @@
 nav {
   z-index: 1;
   position: fixed;
-  background: #efefef;
-  padding: max(0.4rem, 0.6vw) 0.2rem max(0.5rem, 0.6vw) 0.2rem;
+  background-color: #fff;
+  padding: max(0.2rem, 0.6vw) 0.2rem max(0.5rem, 0.6vw) 0.2rem;
   border-radius: 0px 0px 15px 15px;
 }
 
@@ -17,9 +17,8 @@ nav ul {
 nav li {
   padding: 0rem min(5vw, 2.5rem) 0rem min(5vw, 2.5rem);
   display: inline-block;
-  font-weight: bold;
-  font-family: "Indie Flower";
-  font-size: max(1rem, 1.4vw);
+  font-family: "product sans";
+  font-size: clamp(0.8rem, 1.4vw, 1.2rem);
 }
 
 nav .link {
@@ -33,7 +32,7 @@ nav .link a {
 }
 
 nav .link:hover {
-  background-color: #fafafa;
+  background-color: #efefef;
 }
 
 nav .link:last-child {
@@ -41,7 +40,7 @@ nav .link:last-child {
 }
 
 </style>
-<nav class="fade-down">
+<nav class="fade-in-down">
     <ul>
     <li class="link"><a href="/#about">ABOUT</a></li>
     <li class="link"><a href="/blog">BLOG</a></li>

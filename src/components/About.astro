@@ -1,24 +1,46 @@
 ---
-
 ---
-
-<div class="back" id="about">
-    <div class="front fade-up">
-    <div class="info">
-        <div class="fade-down larger">
-        <span style="color: #eb613d">H</span>ello.
-        </div>
-        <div class="fade-down large">
-        I am <span style="color: #4f4ffa">Esh</span>
-        </div>
-        <div class="type small" style="color: #505050">
-        A <u>web designer</u> and <u>freelancer</u>.
-        </div>
-    </div>
-    <!-- <div class="desc smaller fade-down">
-        Hey, my full name is Esh Gupta, <br />
-        and I am 14 years old, with a passion for computers <br />a really big
-        computer entusiast and hobbyist
-    </div> -->
+<style>
+    @font-face {
+        font-family: 'Product Sans';
+        font-style: normal;
+        font-weight: 400;
+        src: local('Product Sans'), url('https://fonts.cdnfonts.com/s/14955/ProductSans-Regular.woff') format('woff');
+    }
+    .info {
+        font-family: 'Product Sans', sans-serif;
+    }
+    .front {
+        height: 80vh;
+        width: 80vw;
+    }   
+    .text-muted {
+        color: #6c757d!important;
+    }
+    .display-4 {
+        font-size: calc(1.475rem + 2.7vw);
+        font-weight: 300;
+        line-height: 1.2;
+    }
+    .display-1 {
+        font-size: calc(1.625rem + 4.5vw);
+        font-weight: 300;
+        line-height: 1.2;
+    }
+    h4 {    
+        font-size: calc(0.8rem + .8vw);
+    }
+</style>
+    <div id="about" class="front transition-all p-6 pt-12 sm:p-12 bg-amber-100 rounded-2xl flex justify-center sm:flex-col mb-2 snap-start">
+    <div class="info w-full h-max">
+        <h1 class="fade-in-down display-4 text-muted">
+            <span style="color: #eb613d">H</span>ello.
+          </h1>
+          <h2 class="fade-in-down display-1">
+            I am <span style="color: #4f4ffa">Esh</span>
+          </h2>
+          <h4 class="type" style="color: #505050">
+            A <u>web designer</u> and <u>freelancer</u>.
+          </h4>
     </div>
 </div>
