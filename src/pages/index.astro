@@ -15,6 +15,7 @@ import Projects from "../components/Projects.astro";
 </style>
 <Layout title={"Home"}>
   <script slot="head" src="https://unpkg.com/typeit@8.2.0/dist/index.umd.js"></script>
+  <script slot="head" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   <link slot="head" rel="stylesheet" href={Astro.resolve("../styles/animations.css")} />
   <div class="back h-screen w-screen flex items-center justify-center flex-col" id="about" style="background-color: #404;">
     <main class="overflow-scroll transition rounded-2xl scroll-smooth snap-y snap-mandatory">
