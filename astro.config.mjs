@@ -1,4 +1,8 @@
 import path, { dirname } from "path";
+import { fileURLToPath } from "url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 // Full Astro Configuration API Documentation:
 // https://docs.astro.build/reference/configuration-reference
 
@@ -11,6 +15,10 @@ import path, { dirname } from "path";
 export default /** @type {import('astro').AstroUserConfig} */ ({
   // Comment out "renderers: []" to enable Astro's default component support.
   // renderers: [],
+  buildOptions: {
+    site: "https://eshg.netlify.app", // Your public domain, e.g.: https://my-site.dev/. Used to generate sitemaps and canonical URLs.
+    sitemap: true, // Generate sitemap (set to "false" to disable)
+  },
   vite: {
     plugins: [],
     resolve: {
