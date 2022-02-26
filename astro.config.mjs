@@ -1,3 +1,4 @@
+import path, { dirname } from "path";
 // Full Astro Configuration API Documentation:
 // https://docs.astro.build/reference/configuration-reference
 
@@ -7,9 +8,18 @@
 // You can disable this by removing "@ts-check" and `@type` comments below.
 
 // @ts-check
-export default /** @type {import('astro').AstroUserConfig} */ (
-  {
-    // Comment out "renderers: []" to enable Astro's default component support.
-    // renderers: [],
-  }
-);
+export default /** @type {import('astro').AstroUserConfig} */ ({
+  // Comment out "renderers: []" to enable Astro's default component support.
+  // renderers: [],
+  vite: {
+    plugins: [],
+    resolve: {
+      alias: {
+        $: path.resolve(__dirname, "./src"),
+      },
+    },
+    optimizeDeps: {
+      allowNodeBuiltins: true,
+    },
+  },
+});
