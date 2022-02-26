@@ -1,13 +1,27 @@
 ---
 import Layout from "../components/Layout.astro";
 import About from '../components/About.astro';
-import Projects from '../components/Projects.astro';
+import Projects from "../components/Projects.astro";
 ---
+<style global>
+  main {
+    height: calc(80vh);
+    font-family: 'Product Sans', sans-serif;
+  }
 
+  main::-webkit-scrollbar {
+    display:none;
+  }
+</style>
 <Layout title={"Home"}>
-  <script slot="head" src="https://unpkg.com/typeit@8.0.7/dist/index.umd.js"></script>
-  <About />
-  <Projects />
+  <script slot="head" src="https://unpkg.com/typeit@8.2.0/dist/index.umd.js"></script>
+  <link slot="head" rel="stylesheet" href={Astro.resolve("../styles/animations.css")} />
+  <div class="back h-screen w-screen flex items-center justify-center flex-col" id="about" style="background-color: #404;">
+    <main class="overflow-scroll transition rounded-2xl scroll-smooth snap-y snap-mandatory">
+      <About />
+      <Projects />
+    </main>
+  </div>  
   <script>
 	document.querySelectorAll(".type").forEach((e) => {
       new TypeIt(e, {
@@ -16,6 +30,7 @@ import Projects from '../components/Projects.astro';
       }).go();
     });
   </script>
+  <script defer src={Astro.resolve("../scripts/scroll.js")}></script>
 </Layout>
 
 

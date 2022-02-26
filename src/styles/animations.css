@@ -1,0 +1,115 @@
+.fade-in {
+  animation: fade-in 1.5s both;
+}
+
+.fade-out {
+  animation: fade-out 1.5s both;
+}
+
+.fade-in-down {
+  animation: fadeInDown 1.5s both;
+}
+
+.fade-in-up {
+  animation: fadeInUp 1.5s both;
+}
+
+.fade-out-down {
+  animation: fadeOutDown 1.5s both;
+}
+
+.fade-out-up {
+  animation: fadeOutUp 1.5s both;
+}
+
+.scale-in-down {
+  animation: scaleInDown 1.5s both;
+}
+
+.scale-out-down {
+  animation: scaleOutDown 1.5s both;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOutDown {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+}
+
+@keyframes fadeOutUp {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+}
+  
+@keyframes scaleInDown {
+  0% {
+    opacity: 0;
+    transform: scale(0.5) translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes scaleOutDown {
+  0% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.5) translateY(40px);
+  }
+}

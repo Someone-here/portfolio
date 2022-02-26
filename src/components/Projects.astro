@@ -1,19 +1,40 @@
 ---
-
+import ProjectCard from "./ProjectCard.astro";
+const projects = [{
+    name: "Photography and Art Gallery",
+    description: `
+        A website for a photography and art showcase of Shivansh Gupta, with payment system.
+    `
+}, {
+    name: "Bitcoin trading Bot",
+    description: `
+        A bot that trades bitcoin with simple logic written in python, with even a frontend website.
+    `
+}, {
+    name: "Dank Memer discord Bot",
+    description: `
+        A bot that grinds coins on the dank memer discord bot, built with discord.py(python)
+    `
+}, {
+    name: "Network Simulator",
+    description: `
+        A network simulator that simulates various network protocols and network devices, built with javascript-deno.
+    `
+}]
 ---
-
-<div
-    id="projects"
-    class="back"
->
-    <div class="front fade-up" style="align-items: flex-start">
-    <div class="bio">
-        <div class="info">
-        <div class="fade-down medium">PROJECTS</div>
-        <div class="small type" style="color: #505050">
-            Here are some of my works...
-        </div>
-        </div>
+<style>
+    .front {
+        height: 80vh;
+        width: 80vw;
+    }
+    #projects {
+        grid-template-columns: 1fr 1fr;   
+        grid-template-rows: 1fr 5fr 5fr; 
+    }
+</style>
+<div id="projects" class="front snap-start transition-all grid p-2 gap-3">
+    <div class="bg-amber-50 col-span-2 rounded-lg p-2 text-center text-2xl font-medium leading-8 tracking-wide">
+        <h1>PROJECTS</h1>
     </div>
-    </div>
+    {projects.map(project => <ProjectCard {...project} />)}
 </div>
