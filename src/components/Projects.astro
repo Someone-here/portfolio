@@ -1,26 +1,7 @@
 ---
 import ProjectCard from "./ProjectCard.astro";
-const projects = [{
-    name: "Photography and Art Gallery",
-    description: `
-        A website for a photography and art showcase of Shivansh Gupta, with payment system.
-    `
-}, {
-    name: "Bitcoin trading Bot",
-    description: `
-        A bot that trades bitcoin with simple logic written in python, with even a frontend website.
-    `
-}, {
-    name: "Dank Memer discord Bot",
-    description: `
-        A bot that grinds coins on the dank memer discord bot, built with discord.py(python)
-    `
-}, {
-    name: "Network Simulator",
-    description: `
-        A network simulator that simulates various network protocols and network devices, built with javascript-deno.
-    `
-}]
+import * as proj from "../utils/projects.json";
+const projects = proj.default.projects
 ---
 <style>
     .front {
