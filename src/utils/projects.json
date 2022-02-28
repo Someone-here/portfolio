@@ -1,6 +1,18 @@
 {
   "projects": [
     {
+      "name": "Photography and Art Gallery",
+      "description": "A website for a photography and art showcase of Shivansh Gupta, with payment system.",
+      "github": "https://github.com/someone-here/sg-art",
+      "live": "https://sgs-art.herokuapp.com"
+    },
+    {
+      "name": "Bitcoin trading Bot",
+      "description": "A bot that trades bitcoin with simple logic written in python, with even a frontend website.",
+      "github": "https://github.com/someone-here/stockTrading",
+      "live": "https://bitcoin1712.herokuapp.com"
+    },
+    {
       "name": "Dank Memer discord Bot",
       "description": "A bot that grinds coins on the dank memer discord bot, built with discord.py(python)",
       "github": "https://github.com/someone-here/",
@@ -11,24 +23,6 @@
       "description": "A network simulator that simulates various network protocols and network devices, built with javascript-deno.",
       "github": "https://github.com/someone-here/networkCLI",
       "live": "https://github.com/someone-here/networkCLI"
-    },
-    {
-      "name": "Bitcoin trading Bot",
-      "description": "A bot that trades bitcoin with simple logic written in python, with even a frontend website.",
-      "github": "https://github.com/someone-here/stockTrading",
-      "live": "https://bitcoin1712.herokuapp.com"
-    },
-    {
-      "name": "Photography and Art Gallery",
-      "description": "A website for a photography and art showcase of Shivansh Gupta, with payment system.",
-      "github": "https://github.com/someone-here/sg-art",
-      "live": "https://sgs-art.herokuapp.com"
-    },
-    {
-      "name": "Testing",
-      "description": "Hello this is a test",
-      "github": "None",
-      "live": "None"
     }
   ]
 }
